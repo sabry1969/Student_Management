@@ -1,0 +1,133 @@
+body {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+
+.calculator {
+    background-color: #1c1c1c;
+    padding: 30px;
+    border-radius: 30px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+    max-width: 430px;
+    width: 90%;
+    height: auto;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+
+}
+
+
+.output {
+    background: #000;
+    color: #fff;
+    font-size: 48px;
+    text-align: right;
+    padding: 20px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    min-height: 80px;
+}
+
+.formula {
+    color: #aaa;
+    font-size: 20px;
+    text-align: right;
+    min-height: 25px;
+}
+
+.main-display {
+    font-size: 48px;
+    text-align: right;
+}
+
+
+
+.but {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+
+button.zero {
+    width: 220px;
+    border-radius: 50px;
+    text-align: left;
+    padding-left: 40px;
+    grid-column: span 2;
+
+}
+
+
+button {
+    padding: 20px 0;
+    width: 90px;
+    height: 90px;
+    font-size: 40px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+
+button.orange {
+    background-color: #ff9500;
+    color: #fff;
+}
+
+button.gray {
+    background-color: #a5a5a5;
+    color: #000;
+}
+
+button.dark {
+    background-color: #333333;
+    color: #fff;
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+button:hover {
+    background-color: #555;
+    transform: scale(1.05);
+}
+
+@media (max-width: 500px) {
+    .calculator {
+        width: 320px;
+        height: auto;
+        padding: 20px;
+    }
+
+    .output {
+        font-size: 32px;
+        padding: 15px;
+    }
+
+    button {
+        width: 60px;
+        height: 60px;
+        font-size: 24px;
+    }
+
+    button.zero {
+        width: 140px;
+        padding-left: 15px;
+    }
+
+    .but {
+        gap: 8px;
+    }
+}
