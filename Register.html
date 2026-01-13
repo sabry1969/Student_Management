@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Student Registration</title>
+    <link rel="stylesheet" href="Register.css">
+</head>
+
+<body>
+    <header>
+        <h1>Student Registration</h1>
+    </header>
+
+    <form class="form_Res" action="register.php" method="POST" id="registerForm">
+
+        <h3>Please Fill Out The Following Data</h3>
+
+        <label>Name</label>
+        <input type="text" id="regName" name="name" placeholder="Enter Your Full Name" required>
+
+        <label>National ID number</label>
+        <input type="text" id="regNationalID" name="id" placeholder="Enter Your National ID number" required>
+
+        <label>Nationality</label>
+        <input type="text" id="regNationality" name="nationality" placeholder="Enter Your Nationality" required>
+
+        <label>Gender</label>
+        <select id="regGender" name="gender" required>
+            <option disabled selected>Your Gender</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+        </select>
+
+        <label>Phone number</label>
+        <input type="text" id="regPhone" name="phone" placeholder="Enter Your Phone number" required>
+
+        <label>Birthdate</label>
+        <input type="date" id="regBirthdate" name="birthdate" required>
+
+        <label>Email</label>
+        <input type="email" id="regEmail" name="email" placeholder="Enter Your Email" required>
+
+        <label>Your Password</label>
+        <input type="password" id="regPassword" name="password" placeholder="Create Your Password" required>
+
+        <label>Confirm password</label>
+        <input type="password" id="regConfirm" name="Confirm" placeholder="Confirm Your Password" required>
+
+        <button class="btn-add" id="registerBtn" name="registerBtn" type="submit">Register</button>
+    </form>
+
+    <script src="Register.js"></script>
+</body>
+
+</html>

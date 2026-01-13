@@ -1,0 +1,218 @@
+body {
+    background-color: #001;
+    color: white;
+    font-family: sans-serif;
+}
+
+header {
+    background-color: #123;
+    text-align: center;
+    padding: 20px;
+    font-weight: bold;
+    width: 100%;
+    height: 80px;
+    font-size: 30px;
+    border-radius: 10px;
+}
+
+.img-box {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid white;
+    flex-shrink: 0;
+}
+
+.img-box img {
+    width: 100%;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.profile h2 {
+    font-size: 20px;
+    text-transform: capitalize;
+}
+
+.main {
+    display: flex;
+    gap: 20px;
+
+}
+
+.menu {
+    background-color: #123;
+    width: 110px;
+    height: 100vh;
+    padding: 20px;
+    overflow: hidden;
+    transition: 0.5s;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+.menu:hover {
+    width: 260px;
+    transition: 0.5s;
+}
+
+ul {
+    list-style: none;
+    position: relative;
+    height: 95%;
+}
+
+ul li a {
+    text-decoration: none;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    transition: 0.5s;
+    color: white;
+}
+
+ul li a:hover,
+td:hover {
+    background-color: #ffffff55;
+}
+
+.log_out {
+    position: absolute;
+    color: white;
+    bottom: 0;
+}
+
+.log_out a:hover {
+    background-color: #a00;
+
+}
+
+ul li a i {
+    font-size: 25px;
+}
+
+.content {
+    width: 100%;
+    margin: 10px;
+}
+
+.title {
+    background-color: skyblue;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 8px;
+    margin: 10px 0;
+    font-size: 25px;
+
+}
+
+.courses {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    width: 100%;
+    margin: 50px auto;
+
+}
+
+.card {
+    background-color: #123;
+    padding: 40px;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 22px;
+    font-weight: bold;
+    box-shadow: 0 0 10px #00ff9955;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px #00ff99;
+    cursor: pointer;
+}
+
+table {
+    width: 100%;
+    text-align: center;
+    border-spacing: 8px;
+}
+
+td,
+th {
+    background-color: #123;
+    height: 40px;
+    border-radius: 8px;
+}
+
+th {
+    background-color: #0080ff;
+}
+
+.Mark,
+.gpa {
+    padding: 6px;
+    border-radius: 6px;
+}
+
+.Mark {
+    background-color: green;
+}
+
+.gpa {
+    background-color: gold;
+    color: black;
+}
+
+.export {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.export .title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-size: 25px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.export-buttons-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.export-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 250px;
+    height: 100px;
+    background-color: green;
+    color: white;
+    font-size: 25px;
+    border-radius: 10px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.5s;
+    box-sizing: border-box;
+}
+
+.export-btn:hover {
+    background-color: #00aa00;
+    transform: scale(1.05);
+    box-shadow: 0 0 15px #00ff99;
+}

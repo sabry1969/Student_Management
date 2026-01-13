@@ -1,0 +1,92 @@
+/* body and general */
+body {
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Main Title */
+header {
+    text-align: center;
+    padding: 20px;
+    color: yellow;
+    font-size: 20px;
+}
+
+/* Subtitle */
+h3 {
+    text-align: center;
+    color: black;
+    margin-bottom: 20px;
+}
+
+/* Form Container */
+.form_Res {
+    background-color: yellow;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 255, 0, 0.3);
+    color: black;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 500px;
+    max-width: 90%;
+    margin: 30px auto;
+}
+
+/* Labels */
+label {
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+/* Inputs and Select */
+.form_Res input,
+.form_Res select {
+    width: 95%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #000;
+    font-size: 14px;
+    outline: none;
+    background-color: black;
+    color: yellow;
+    transition: all 0.3s ease;
+
+}
+
+
+.form_Res input:hover,
+.form_Res select:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 8px yellow;
+}
+
+.form_Res input:focus,
+.form_Res select:focus {
+    border-color: yellow;
+    box-shadow: 0 0 10px yellow;
+    transform: scale(1.03);
+}
+
+/* Button */
+.form_Res .btn-add {
+    width: 50%;
+    color: yellow;
+    background-color: black;
+    margin: 20px auto 0 auto;
+    padding: 12px;
+    font-weight: bold;
+    border: 2px solid yellow;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+    text-align: center;
+}
+
+.form_Res .btn-add:hover {
+    background-color: yellow;
+    color: black;
+    border-color: black;
+}
